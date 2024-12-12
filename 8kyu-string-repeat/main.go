@@ -3,14 +3,15 @@ package main
 import "fmt"
 
 func strRepeat(reps int, str string) string {
-	for n := 1; n < reps; n++ {
-		str += str
+	var final string
+	for n := 0; n < reps; n++ {
+		final += str
 	}
-	return str
+	return final
 }
 
 func main() {
-	fmt.Println(strRepeat(4, "Gopher"))
+	fmt.Println(strRepeat(6, "Gopher"))
 	// str := "hello"
 	// count := 6
 	// for n := 0; n < count; n++ {
