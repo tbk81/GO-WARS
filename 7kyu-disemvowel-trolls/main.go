@@ -1,20 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func disemvowel(str string) int {
-	count := 0
-	for _, c := range str {
-		switch c {
-		case 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U':
-			count++
-		}
+// var vowels []string
+func disemvowel(str string) string {
+	// vowels = "a", "e", "i", "o", "u", "A", "E", "I", "O", "U"
+	vowels := []string{"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
+
+	for _, v := range vowels {
+		str = strings.ReplaceAll(str, v, "")
 	}
-	return count
+	return str
 }
 
 func main() {
-	fmt.Println(disemvowel("Hello"))
+	fmt.Println(disemvowel("This website is for losers LOL!"))
 }
 
 /*
