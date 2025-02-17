@@ -8,7 +8,6 @@ func smallestInt(xi []int) (small int) {
 		if num < small {
 			small = num
 		}
-
 	}
 	return
 }
