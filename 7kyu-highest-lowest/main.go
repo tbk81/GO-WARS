@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func smallestInt(xi []int) (small int) {
-	// small = 0
+	small = xi[0]
 	for _, num := range xi {
 		if num < small {
 			small = num
