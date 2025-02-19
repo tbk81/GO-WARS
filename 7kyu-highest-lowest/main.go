@@ -12,7 +12,7 @@ func smallestInt(xi []int) (small int) {
 	return
 }
 
-func largesttInt(xi []int) (large int) {
+func largestInt(xi []int) (large int) {
 	for _, num := range xi {
 		if num > large {
 			large = num
@@ -23,7 +23,7 @@ func largesttInt(xi []int) (large int) {
 
 func main() {
 	fmt.Println(smallestInt([]int{34, 15, 88, 2}))
-	fmt.Println(largesttInt([]int{34, 15, 88, -2, 100, -90}))
+	fmt.Println(largestInt([]int{34, 15, 88, 2}))
 }
 
 /*
